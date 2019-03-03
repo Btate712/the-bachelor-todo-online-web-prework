@@ -5,8 +5,9 @@ def get_first_name_of_season_winner(input_data, input_season)
     if season == input_season
       data.each do |contestant|
         if contestant["status"] == "Winner"
-          puts contestant["name"]
-          return contestant["name"]
+          #pull first name from Winner
+          name_array = contestant["name"].split(" ")
+          return name_array[0]
         end
       end
     end
