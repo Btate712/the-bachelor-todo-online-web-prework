@@ -52,5 +52,4 @@ def get_average_age_for_season(data, season)
   # code here
 end
 
-  let(:data) { JSON.parse(File.read('../spec/fixtures/contestants.json')) }
-count_contestants_by_hometown(data, "Chicago, Illinois")
+
